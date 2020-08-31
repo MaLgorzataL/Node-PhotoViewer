@@ -1,0 +1,23 @@
+html {
+    background-color: gray;
+}
+
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2016/04/18/22/05/sea-1337565__340.jpg');
+}
+
+h1 {
+    margin: 20px auto;
+}
+
+span {
+
+}
+
+a {
+    text-decoration: none;
+    background-color: turquoise;
+    color: white;
+    font-weight: 700;
+    padding: 5px;
+}

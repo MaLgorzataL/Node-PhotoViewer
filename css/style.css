@@ -1,0 +1,99 @@
+/* General styles for files with image*/
+
+html {
+    background-color: #1a1a1a;
+}
+
+body {
+  margin: 10vh auto 0 auto; 
+  width: 80%; 
+  max-width: 700px;
+  border: solid 1px white;
+}
+
+img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  object-fit: cover;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+  }
+  
+
+.col-1 {
+    flex: 0 0 8.3333333333%;
+    max-width: 8.3333333333%;
+  }
+  
+  .col-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+  }
+  
+  .col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  
+  .col-4 {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+  
+  .col-5 {
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+  }
+  
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  .col-7 {
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+  }
+  
+  .col-8 {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+  }
+  
+  .col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  
+  .col-10 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+  
+  .col-11 {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
+  
+  .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+  }
+  
+a {
+    text-decoration: none;
+    background-color: silver;
+    color: grey;
+    font-weight: 900;
+    padding: 7px;
+}
+
+.right {
+  text-align: right;
+}
