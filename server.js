@@ -1,20 +1,34 @@
-const express = require('express')
-const fs = require('fs');
-const http = require('http'); //Inicjacja serwera HTTP
-const app = express()
+import express from 'express';
+import data from './data/data.json';
+import * as fs from 'fs';
 
+const app = express()
+const PORT = 3000;
 
 app.get('/', (request, respond) => {
 
-    fs.readFile('./index.html', 'utf8', function(err, data) {
+    fs.readFile('./index.html', 'utf8', function(err, image) {
         if (err) throw err;
-        stringifyFile = data
-        respond.send(data);
+        let stringifyFile = image;
+        respond.send(image);
     });
-})
+});
 
-app.use(express.static(__dirname + '/Images'))
 
-app.listen(3000, () => {
-    console.log('Server started and is listening on port 3000')
-})
+
+app.post('/newItem', (req, res) =>
+    res.send(`a post request with /newItem route on port ${PORT}`)
+);
+
+app.put('/item', (req, res) =>
+    res.send(`a put request with /item route on port ${PORT}`)
+);
+
+app.delete('/item', (req, res) =>
+    res.send(`a delete request with /item route on port ${PORT}`)
+);
+
+app.listen(PORT, () => {
+    console.log(`Server started and is listening on port ${PORT}`);
+    console.log(data);
+});
