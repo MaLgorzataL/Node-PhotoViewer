@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang='en' style="background-color: #1a1a1a;">
+	    <head>
+  		    <meta charset="UTF-8">
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		    <title>Login Page</title>
+            <script>
+                function validateForm() {
+                  var x = document.forms["myForm"]["fname"].value;
+                  if (x == "") {
+                    alert("Name must be filled out");
+                    return false;
+                  }
+                }
+                </script>
+        </head>                
+            
+
+     <body style="margin: 10vh auto;width: 80%; max-width: 700px;border: solid 1px white;">
+        <form action="http://localhost:3000/userform">
+            <p style="display: flex; flex-wrap: wrap; margin-left: 15%; margin-right: 15%; color: white;">
+                E-mail: <input type="email" name="email">
+            </p>
+            <p style="display: flex; flex-wrap: wrap; margin-left: 15%; margin-right: 15%; color: white;">
+                <label pas="password">Password: </label><input type="text" name="password">
+            </p>
+
+            <input type="submit" value="Login">
+            <button style="margin-left: 80%;">Register</button>
+        </form>
+        <div id="message"></div>
+        
+    </body>
+</html>
